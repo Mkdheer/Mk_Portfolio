@@ -1,0 +1,123 @@
+
+body, h1, h2, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("BGpic3.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.navbar {
+  position: fixed;
+  right: 0;
+  background-color: transparent; 
+  backdrop-filter: blur(10px); 
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.nav-links a:hover{
+  color: orange;
+  text-decoration: underline;
+  transform: translateY(5px);
+}
+
+
+.content-section {
+  padding-top: 80px; 
+  text-align: center;
+}
+
+.content {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  
+}
+
+.name {
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+   font-family: 'Roboto', Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.role {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 20px;
+  margin-left: 42rem;
+}
+
+.btn {
+  padding: 10px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover{
+ background-color: white;
+ border: 2px solid orange;
+ color: orange;
+ box-shadow: 0 4px 4px orange;
+}
+
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 2em;
+  }
+
+  .role {
+    font-size: 1.2em;
+  }
+
+  .btn {
+    padding: 8px 30px;
+    font-size: 1em;
+  }
+}
