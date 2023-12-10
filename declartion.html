@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Declaration Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: orange;
+    }
+    #content {
+      width: 80%;
+      height: 50vh;
+      /*max-width: 900px;*/
+      border: 2px solid black;
+      padding: 20px;
+      text-align: center;
+      background-color: white;
+      border-radius: 0px 50px 0px 50px;
+      font-family: Arial Black;
+      font-style: italic;
+      font-size: 1.5rem;
+      overflow: hidden; 
+/*      display: flex;
+      align-items: center;
+      justify-content: center;*/
+
+    }
+    #content:hover{
+      box-shadow: 0 0 34px white;
+    }
+
+    footer{
+      /*display: flex;*/
+      /*justify-content: flex-start;*/
+      /*align-content: flex-start;*/
+      margin-bottom: auto;
+      position: relative;
+      right: 5%;
+      top: 3%;
+
+    }
+     .button-container {
+      position: absolute;
+      display: flex;
+      justify-content: flex-start;
+      align-content: flex-start; 
+    }
+
+
+    .button {
+      padding: 5px 20px;
+      margin: 0 10px;
+      border: 2px solid black;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: teal;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      /*position: absolute;*/
+    }
+
+    .button:hover{
+      border: 3px solid black;
+      background-color: white;
+      color: orange;
+      box-shadow: -2px -2px 5px white;
+    }
+
+    @media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+      }
+      .button {
+        margin: 5px 0;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="content">
+    <p id="demo"></p>
+    <div><img src="mk.gif" width="200px" height="200px"> </div>
+    <!-- <div id="homebutton"><a href="Testpage.html"> <img src="house.png" id="home"> </a></div> -->
+  </div>
+<!-- 
+<div id="homebutton"><a href="Testpage.html"> <img src="house.png" id="home"> </a></div> -->
+
+    <footer>
+      <div class="button-container">
+       <button class="button" onclick="history.go(-1)"></a> Go Back </button>
+         <button class="button" onclick="goToHomePage()">Home Page</button> 
+        </div>
+    </footer>
+
+  <script>
+    var i = 0;
+    var txt = "I affirm that all the information provided above is accurate and true to the best of my knowledge.I accept responsibility for any inaccuracies that may arise in the data in the future.";
+    var speed = 40;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    window.onload = function() {
+      typeWriter();
+    };
+
+    function goToHomePage() {
+      window.location.href="index.html";
+    }
+  </script>
+</body>
+</html>

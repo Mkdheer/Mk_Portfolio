@@ -1,0 +1,164 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: orange;
+}
+
+#title{
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 7px 2px 3px black;
+  margin: auto;
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+
+}
+.card {
+  width: 260px;
+  margin: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 2px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: white;
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px white;
+}
+
+img {
+  width: 40%;
+  height: auto;
+  padding-top: 5px;
+  padding-left: 5px;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+  background-color: #fff;
+}
+
+h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.ratings {
+  display: none;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('star.png'); 
+  background-size: cover;
+  margin-right: 5px;
+}
+.starwhite{
+ display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('starwhite.png'); 
+  background-size: cover;
+  margin-right: 5px; 
+}
+
+.card:hover .ratings {
+  display: flex;
+}
+
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .button-container {
+      margin-top: 15px;
+    }
+
+    .button {
+      padding: 10px 30px;
+      margin: 0 10px;
+      border: 2px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: orange;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .button:hover{
+      border: 3px solid orange;
+      background-color: white;
+      color: orange;
+      box-shadow: -2px -2px 5px white;
+    }
+
+    .back{
+      padding: 10px 30px;
+      margin: 0 10px;
+      border: 2px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: lightgrey;
+      color: black;
+      font-size: 15px;
+      font-weight: bold;
+    }
+     #homebutton{
+      display: flex;
+    }
+
+    #home{
+      width: 50px;
+      height: 50px;
+      justify-content: flex-end;
+
+    }
+
+@media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+      }
+      .button {
+        margin: 5px 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+      }
+      .back {
+        margin: 5px 0;
+      }
+    }

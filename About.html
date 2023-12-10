@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Career Objective's</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("succ.avif");
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
+
+    }
+    #content {
+      text-align: center;
+      font-family: Arial Black;
+      font-style: italic;
+      font-size: 2.0rem;
+      overflow: hidden;
+      color: navy; 
+      text-shadow: 0 0 5px white;
+    }
+     
+
+    footer{
+      /*position: fixed;*/
+      text-align: center;
+
+    }
+
+
+    .button {
+      padding: 10px 30px;
+      margin: 0 10px;
+      border: 2px solid black;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: teal;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .button:hover{
+      border: 3px solid black;
+      background-color: white;
+      color: orange ;
+      box-shadow: -2px -2px 5px white;
+    }
+
+    @media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+      }
+      .button {
+        margin: 5px 0;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="content">
+    <p id="demo"></p>
+    <footer>
+      <div class="button-container">
+       <button class="button" onclick="history.go(-1)"></a> Go Back </button>
+         <button class="button" onclick="goToHomePage()">Academic's</button> 
+        </div>
+    </footer>
+
+  <script>
+    var i = 0;
+    var txt = "As an analytical-minded and creative team player, I possess a robust background in designing, planning, and maintaining software programs. I am eager to contribute as a Software Engineer, aiming to refine my technical skills and expertise while crafting innovative software solutions that meet clients' specific needs. My goal is to elevate my organization's reputation by delivering creative and tailored products. I am excited about the opportunity to contribute my abilities toward the growth and success of your team";
+    var speed = 30;
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    window.onload = function() {
+      typeWriter();
+    };
+
+    function goToHomePage() {
+      window.location.href="Acedemic Page.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Projects</title>
+  <link rel="stylesheet" href="projstyles.css">
+  <script>
+    function goToExperPage() {
+      window.location.href="Experience.html"
+    }
+  </script>
+
+</head>
+<body>
+
+  <header>
+    <h1>My Projects</h1>
+  </header>
+
+  <main>
+    <section class="projects">
+      <div class="project-card">
+        <img src="annn.jpeg" alt="Project 1" id="pdfImage">
+
+        <h2>Predicting Compressive and Tensile Strength of Concrete containing Recycled Aggregates using Modified a ANN (Artificial Neural Network) Model.</h2>
+        <p>This Project is about creating an ANN model which is used to escalate the experimental data to
+predict the compressive and tensile strength properties of Concrete partially added with recycled aggregates. While training ANN model two Assessment were carried out, In this determination of effective number of neurons in hidden layer for predicting the network structure is carried out in first assessment and In second assessment, Evaluation of accuracy of prediction network is done under different load conditions. High accurate Outcomes are observed with comparing the Experimental results to the results obtained after training of Neural Networks.</p>
+        <a href="http://www.thedesignengineering.com/index.php/DE/article/view/9646" class="btn" target="_blank">PUBLISHED Link</a>
+      </div>
+
+      <div class="project-card">
+        <img src="snake.jpg" alt="Project 2">
+        <h2>Snake Swallow Game</h2>
+        <p>The project is based on Designing a Snake Game and it is a GUI-based project used with the swing library to organize all the elements that work under the Snake game.</p>
+        <a href="https://github.com/Mkdheer/Mk_SnakeGame.git" class="btn" target="_blank">GIT-HUB Link</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="button-container">
+     <button class="back" onclick="history.go(-1)"></a> Go Back </button>
+      <button class="button" onclick="goToExperPage()">My Experiences</button>
+    </div>
+    <div id="homebutton"><a href="index.html"> <img src="house.png" id="home"> </a></div>
+  </footer>
+
+</body>
+</html>

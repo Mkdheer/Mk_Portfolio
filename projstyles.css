@@ -1,0 +1,167 @@
+
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+header {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 8px;
+  background-color: navy;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding: 20px;
+  width: 95%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 40px white;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.project-card h2 {
+  margin-top: 10px;
+  color: gold;
+}
+
+.project-card h2:hover{
+  text-shadow: 1px 1px 24px white;
+}
+
+.project-card p {
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: 15px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #ff8c00;
+}
+img{
+  width: 45%;
+  height: 35vh;
+}
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 25px;
+
+    }
+
+    .button-container {
+      margin-top: 15px;
+    }
+
+    .button {
+      padding: 10px 30px;
+      margin: 0 10px;
+      border: 2px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: orange;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .button:hover{
+      border: 3px solid orange;
+      background-color: white;
+      color: orange;
+      box-shadow: -2px -2px 5px white;
+    }
+
+    .back{
+      padding: 10px 30px;
+      margin: 0 10px;
+      border: 2px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: lightgrey;
+      color: black;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+     #homebutton{
+      display: flex;
+    }
+
+    #home{
+      width: 50px;
+      height: 50px;
+      border-radius: 26px;
+      border: 2px solid white; 
+      justify-content: flex-end;
+
+    }
+    #home:hover{
+      box-shadow: 0px 0px 5px white;
+    }
+
+
+
+
+@media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+      }
+      .button {
+        margin: 5px 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+      }
+      .back {
+        margin: 5px 0;
+      }
+    }

@@ -1,0 +1,136 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: orange;
+}
+
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+#title{
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 7px 2px 3px black;
+}
+ #homebutton{
+      display: flex;
+    }
+
+    #home{
+      width: 50px;
+      height: 50px;
+      border-radius: 26px;
+      border: 2px solid white; 
+      justify-content: flex-end;
+
+    }
+    #home:hover{
+      box-shadow: 0px 0px 5px white;
+    }
+.certificate {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border: 4px solid black;
+  padding: 1px;
+
+}
+
+.certificate img {
+  width: 100%;
+  height: 85vh;
+  display: block;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.certificate:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.overlay p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+
+    }
+    .button-container {
+      margin-top: 15px;
+    }
+
+    .back {
+      padding: 10px 30px;
+      margin: 0 10px;
+      border: 2px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: orange;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .back:hover{
+      border: 3px solid orange;
+      background-color: white;
+      color: orange;
+      box-shadow: -2px -2px 5px white;
+    }
+
+@media screen and (max-width: 768px) {
+  .certificate {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .certificate {
+    flex: 0 0 calc(100% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+      }
+      .button {
+        margin: 5px 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .button-container {
+        flex-direction: column;
+      }
