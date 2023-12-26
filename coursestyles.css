@@ -1,0 +1,106 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("5172658.jpg"); /* Light gray background */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+.header {
+  /*background-color: gold;  Dark background for header */
+  color: #ffffff; /* White text color */
+  padding: 20px 0;
+  text-align: center;
+  text-shadow: 4px 5px 5px gold;
+
+}
+
+.container {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+/* Card styles */
+.card {
+  width: 100%;
+  background-color: black;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 70vh;
+}
+
+.card-title {
+  color: #343a40; /* Dark text color */
+  font-weight: bold;
+}
+
+.card-text {
+  color: #6c757d; /* Subdued text color */
+}
+
+/* Carousel control colors */
+.carousel-control-prev,
+.carousel-control-next {
+  color: #343a40; /* Dark color for carousel controls */
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.button-container {
+    margin-top: 15px;
+}
+
+.button {
+    padding: 10px 30px;
+    margin: 0 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.button:hover{
+      border: 3px solid orange;
+      background-color: white;
+      color: orange;
+      box-shadow: -2px -2px 5px white;
+}
+
+
+.back{
+      padding: 10px 30px;
+      margin: 0 10px;
+      border: 2px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: lightgrey;
+      color: black;
+      font-size: 15px;
+      font-weight: bold;
+}
+
+#homebutton{
+      display: flex;
+}
+
+#home{
+      /*margin-left: auto;*/
+      width: 50px;
+      height: 50px;
+      justify-content: flex-end;
+
+    } 
